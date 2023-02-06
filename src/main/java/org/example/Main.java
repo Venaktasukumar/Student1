@@ -38,7 +38,7 @@ class Student1 {
     }
 }
 
-class sortedGPA implements Comparator<Student1> {
+class sortedgpa implements Comparator<Student1> {
     public int compare(Student1 s1, Student1 s2) {
         if(s2.getStudentgpa() - s1.getStudentgpa()<0){
             return -1;
@@ -76,7 +76,7 @@ class StudentTest {
         for (Student1 s : k) {
                 l.info(s.getStudentname() + " " + s.getStudentage() + " " + s.getStudentgpa());
             }
-        Collections.sort(k,new sortedGPA());
+        Collections.sort(k,new sortedgpa());
         l.info("After sorting:");
         for (Student1 s : k) {
                 l.info(s.getStudentname() + " " + s.getStudentage() + " " + s.getStudentgpa());
