@@ -2,56 +2,6 @@ package org.example;
 import java.util.*;
 import java.util.logging.*;
 
-class Student1 {
-    String name;
-    int age;
-    double gpa;
-
-    public Student1(String name, int age, double gpa) {
-        this.name = name;
-        this.age = age;
-        this.gpa = gpa;
-    }
-
-    public String getStudentname() {
-        return name;
-    }
-
-    public void setStudentname(String name) {
-        this.name = name;
-    }
-
-    public int getStudentage() {
-        return age;
-    }
-
-    public void setStudentage(int age) {
-        this.age = age;
-    }
-
-    public double getStudentgpa() {
-        return gpa;
-    }
-
-    public void setStudentgpa(double gpa) {
-        this.gpa = gpa;
-    }
-}
-
-class Sortedgpa implements Comparator<Student1> {
-    public int compare(Student1 s1, Student1 s2) {
-        if(s2.getStudentgpa() - s1.getStudentgpa()<0){
-            return -1;
-        }
-        else if(s2.getStudentgpa() - s1.getStudentgpa()>0){
-            return 1;
-        }
-        else{
-            return 0;
-        }
-    }
-}
-
 class StudentTest {
     public static void main(String[] args) {
         Logger l = Logger.getLogger("com.api.jar");
